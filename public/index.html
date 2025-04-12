@@ -3,21 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de um ecommerce voltado para venda de canecas, roupas e outros produtos relacionados">
     <title>Avanti</title>
+    <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <div class="cupom-desconto">
+            <p>Ganhe  <span class="cupom-desconto__preco">R$10,00</span> de desconto no seu primeiro pedido.</p>
+            <p>Utilize o cupom <span class="cupom-desconto__desconto">DESCONTO10</span></p>
+        </div>
 
+        <section class="icones-e-busca">
+            <div class="menu-e-carrinho">
+                <nav class="menu-e-carrinho__menu">
+                    <div class="menu-hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </nav>
+
+                <figure>
+                    <img src="../assets/images/avanti-logo.png" alt="">
+                </figure>
+
+                <figure>
+                    <img src="../assets/images/carrinho.png" alt="">
+                </figure>
+            </div>
+
+            <form class="busca">
+                <input type="text" name="busca-produtos" id="busca-produtos" placeholder="Digite aqui o que você procura">
+
+                <img class="icone-lupa" src="../assets/images/lupa.png" alt="Icone de lupa para realizar busca de produtos"> 
+            </form>
+        </section>
     </header>
-
     
     <main>
 
     </main>
 
-
     <footer>
 
     </footer>
+
+    <script src="../src/scripts/main.js"></script>
 </body>
 </html>
