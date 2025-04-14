@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página de um ecommerce voltado para venda de canecas, roupas e outros produtos relacionados">
     <title>Avanti</title>
+    <link rel="stylesheet" href="../src/styles/bootstrap.min.css">
     <link rel="stylesheet" href="../src/styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,15 +42,29 @@
             </div>
 
             <form class="busca">
-                <input type="text" name="busca-produtos" id="busca-produtos" placeholder="Digite aqui o que você procura">
+                <input id="busca-produtos" type="text" name="busca-produtos"  placeholder="Digite aqui o que você procura">
 
-                <img class="icone-lupa" src="../assets/images/lupa.png" alt="Icone de lupa para realizar busca de produtos"> 
+                <img id="lupa-busca" class="icone-lupa" src="../assets/images/lupa.png" alt="Icone de lupa para realizar busca de produtos"> 
             </form>
+
+            <p class="resultado-busca"></p>
         </section>
     </header>
     
     <main>
+        <section id="slide-carousel" class="slide carousel" data-bs-ride="carousel">
+            <article class="carousel-inner">
+                <div class="carousel-item">
+                        <img class="w-100 active" src="../assets/images/super-sale-image.png" alt="Imagem de com anúncio de promoção">
+                        <img class="w-100" src="../assets/images/super-sale-image.png" alt="Imagem de com anúncio de promoção">
+                        <img class="w-100" src="../assets/images/super-sale-image.png" alt="Imagem de com anúncio de promoção">
+                </div>
+            </article>
 
+            <a href="#slide-carousel" class="carouse-control-prev" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+        </section>
     </main>
 
     <footer>
@@ -57,5 +72,7 @@
     </footer>
 
     <script src="../src/scripts/main.js"></script>
+    <script src="../src/scripts/jquery-3.7.1.min.js"></script>
+    <script src="../src/scripts/bootstrap.bundle.min.js"></script>
 </body>
 </html>
