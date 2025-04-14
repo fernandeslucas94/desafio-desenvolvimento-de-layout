@@ -6,8 +6,15 @@ let menuELogoContainer = document.querySelector(".menu-e-carrinho");
 
 iconeLupaBusca.addEventListener('click', () => {
     let resultado = buscaItens.value;
-    resultadoBusca.textContent = `Você buscou por: ${resultado}`;
 
-    menuELogoContainer.style.marginTop = '.4em';
-    buscaItens.style.marginTop = '.4em'
+    if(resultado == '') {
+        resultadoBusca.textContent = '';
+    }
+
+    if(resultado != '') {
+        resultadoBusca.textContent = `Você buscou por: '${resultado}'`;
+
+        menuELogoContainer.style.marginTop = '.4em';
+        buscaItens.style.marginTop = '.4em'
+    }
 })
