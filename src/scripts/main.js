@@ -3,6 +3,7 @@ let buscaItens = document.querySelector("#busca-produtos");
 let iconeLupaBusca = document.querySelector("#lupa-busca");
 let resultadoBusca = document.querySelector(".resultado-busca");
 let menuELogoContainer = document.querySelector(".menu-e-carrinho");
+let carouselContainer = document.querySelector(".slide");
 
 iconeLupaBusca.addEventListener('click', () => {
     let resultado = buscaItens.value;
@@ -16,5 +17,6 @@ iconeLupaBusca.addEventListener('click', () => {
 
         menuELogoContainer.style.marginTop = '.4em';
         buscaItens.style.marginTop = '.4em'
+        carouselContainer.style.marginTop = '1em';
     }
 })

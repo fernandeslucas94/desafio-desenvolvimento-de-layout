@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../src/styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -52,18 +53,104 @@
     </header>
     
     <main>
+        <!-- ### A section abaixo, contém os elementos do banner de desconto que está sendo utilizando para dispositivos mobile ### -->
         <section id="slide-carousel" class="slide carousel" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li class="active" data-bs-target="#slide-carousel" data-slide-to="0"></li>
+                <li data-bs-target="#slide-carousel" data-slide-to="1"></li>
+                <li data-bs-target="#slide-carousel" data-slide-to="2"></li>
+            </ol>
+
             <article class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100 active banner-mobile" src="../assets/images/super-sale-image.png" alt="Imagem de com anúncio de promoção">
+                </div>
+
                 <div class="carousel-item">
-                        <img class="w-100 active" src="../assets/images/super-sale-image.png" alt="Imagem de com anúncio de promoção">
-                        <img class="w-100" src="../assets/images/super-sale-image.png" alt="Imagem de com anúncio de promoção">
-                        <img class="w-100" src="../assets/images/super-sale-image.png" alt="Imagem de com anúncio de promoção">
+                    <img class="w-100 mobile banner-desktop" src="../assets/images/super-sale-image.png" alt="Imagem de com anúncio de promoção">
+                </div>
+
+                <div class="carousel-item">
+                    <img class="w-100 mobile banner-desktop" src="../assets/images/super-sale-image.png" alt="Imagem de com anúncio de promoção">
                 </div>
             </article>
 
-            <a href="#slide-carousel" class="carouse-control-prev" data-bs-slide="prev">
+            <a href="#slide-carousel" class="carousel-control-prev" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </a>
+
+            <a href="#slide-carousel" class="carousel-control-next" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </section>
+
+        <!-- ### A section abaixo contém o banner de desconto sendo aplicado somente para dispositivos com telas de resoluções superiores à 768px -->
+         <section class="banner-desconto-desktop">
+            <article class="itens-banner-container">
+                <img src="../assets/images/cadeira-com-roupas.png" alt="">
+                <img src="../assets/images/super-sale-text.png" alt="">
+            </article>
+         </section>
+
+        <section class="lancamentos">
+            <article class="lancamentos__container">
+                <div class="subtitulo-e-botao">
+                    <h2>Lançamentos</h2>
+                    <a href="#" class="botao-ver-mais">Ver mais</a>
+                </div>
+
+                <article class="cards-container">
+                    <div class="card">
+                        <div class="container-imagem-lancamento">
+                            <div class="lancamento-novo-produto">Novo</div>
+                        </div>
+
+                        <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+
+                        <article class="preco-container">
+                            <div class="preco-e-desconto">
+                                <div class="preco-novo">
+                                    <span class="preco-anterior"><del>R$ 100,00</del></span>
+                                    <span class="preco-atual">R$79,90</span>
+                                </div>
+
+                                <span class="porcentagem-desconto">10% OFF</span>
+                            </div>
+                            
+                            <div class="parcelamento">Ou em até <span>10x de R$ 7,90</span></div>
+                        </article>
+
+                        <span class="botao-comprar">
+                            <a href="#">Comprar</a>
+                        </span>
+                    </div>
+
+                    <div class="card">
+                        <div class="container-imagem-lancamento">
+                            <div class="lancamento-novo-produto">Novo</div>
+                        </div>
+
+                        <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+
+                        <article class="preco-container">
+                            <div class="preco-e-desconto">
+                                <div class="preco-novo">
+                                    <span class="preco-anterior"><del>R$ 100,00</del></span>
+                                    <span class="preco-atual">R$79,90</span>
+                                </div>
+
+                                <span class="porcentagem-desconto">10% OFF</span>
+                            </div>
+                            
+                            <div class="parcelamento">Ou em até <span>10x de R$ 7,90</span></div>
+                        </article>
+
+                        <span class="botao-comprar">
+                            <a href="#">Comprar</a>
+                        </span>
+                    </div>
+                </article>
+            </article>
         </section>
     </main>
 
