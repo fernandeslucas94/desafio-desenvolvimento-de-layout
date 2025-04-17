@@ -340,6 +340,13 @@
     }
 }
 
+
+
+
+
+
+
+
 @media (min-width: 321px) {
     /* ### ESTILIZAÇÕES DE ITENS DO HEADER ### */
     .cupom-desconto {
@@ -500,7 +507,7 @@
         background-color: #303030;
     }
 
-    #slide-carousel {
+    #carousel {
         display: block;
     }
 
