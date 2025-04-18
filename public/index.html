@@ -93,15 +93,20 @@
          </section>
 
          <!-- ### A section abaixo está relacionada à área com os lançamentos de produtos contendo carrosel com imagens e preços ### -->
-        <section class="lancamentos carousel">
-            <article class="lancamentos__container">
+        <section class="lancamentos carousel" id="slide-carousel" data-bs-ride="carousel" data-bs-interval="3000">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#slide-carousel-lancamento" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#slide-carousel-lancamento" data-bs-slide-to="1"></li>
+                <li data-bs-target="#slide-carousel-lancamento" data-bs-slide-to="2"></li>
+            </ol>
+            <article class="lancamentos__container carousel-inner">
                 <div class="subtitulo-e-botao">
                     <h2>Lançamentos</h2>
                     <a href="#" class="botao-ver-mais">Ver mais</a>
                 </div>
 
                 <article class="cards-container">
-                    <div class="card">
+                    <div class="card carousel-item active">
                         <div class="container-imagem-lancamento">
                             <div class="lancamento-novo-produto">Novo</div>
                         </div>
@@ -126,7 +131,57 @@
                         </span>
                     </div>
 
-                    <div class="card">
+                    <div class="card carousel-item">
+                        <div class="container-imagem-lancamento">
+                            <div class="lancamento-novo-produto">Novo</div>
+                        </div>
+
+                        <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+
+                        <article class="preco-container">
+                            <div class="preco-e-desconto">
+                                <div class="preco-novo">
+                                    <span class="preco-anterior"><del>R$ 100,00</del></span>
+                                    <span class="preco-atual">R$79,90</span>
+                                </div>
+
+                                <span class="porcentagem-desconto">10% OFF</span>
+                            </div>
+                            
+                            <div class="parcelamento">Ou em até <span>10x de R$ 7,90</span></div>
+                        </article>
+
+                        <span class="botao-comprar">
+                            <a href="#">Comprar</a>
+                        </span>
+                    </div>
+
+                    <div class="card carousel-item">
+                        <div class="container-imagem-lancamento">
+                            <div class="lancamento-novo-produto">Novo</div>
+                        </div>
+
+                        <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+
+                        <article class="preco-container">
+                            <div class="preco-e-desconto">
+                                <div class="preco-novo">
+                                    <span class="preco-anterior"><del>R$ 100,00</del></span>
+                                    <span class="preco-atual">R$79,90</span>
+                                </div>
+
+                                <span class="porcentagem-desconto">10% OFF</span>
+                            </div>
+                            
+                            <div class="parcelamento">Ou em até <span>10x de R$ 7,90</span></div>
+                        </article>
+
+                        <span class="botao-comprar">
+                            <a href="#">Comprar</a>
+                        </span>
+                    </div>
+
+                    <div class="card carousel-item">
                         <div class="container-imagem-lancamento">
                             <div class="lancamento-novo-produto">Novo</div>
                         </div>
@@ -152,6 +207,102 @@
                     </div>
                 </article>
             </article>
+
+            <a href="#slide-carousel-lancamento" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a href="#slide-carousel-lancamento" class="carousel-control-next" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </section>
+
+        <section class="banner-primeira-caneca">
+            <img src="../assets/images/imagem-caneca-virada.png" alt="Imagem de uma caneca com nome da Avanti em posição deitada">
+
+            <h2>Lorem Ipsum</h2>
+
+            <p>
+                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+            </p>
+
+            <p>
+                Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna nisl, vel porttitor augue placerat et.
+            </p>
+        </section>
+
+        <section class="banner-segunda-caneca">
+            <img src="../assets/images/imagem-caneca-em-pe.png" alt="Imagem de uma caneca com nome da Avanti em posição em pé">
+
+            <h2>Lorem Ipsum</h2>
+
+            <article class="banner-segunda-caneca__container-texto">
+                <div class="banner-segunda-caneca__container-texto--conteudo">
+                    <img src="../assets/images/icone-localizacao.png" alt="">
+
+                    <p>
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+                    </p>
+                </div>
+                
+                <div class="banner-segunda-caneca__container-texto--conteudo">
+                    <img src="../assets/images/icone-localizacao.png" alt="">
+
+                    <p>
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+                    </p>
+                </div>
+
+                <div class="banner-segunda-caneca__container-texto--conteudo">
+                    <img src="../assets/images/icone-localizacao.png" alt="">
+
+                    <p>
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section class="banner-terceira-caneca">
+            <img src="../assets/images/imagem-caneca-virada.png" alt="Imagem de uma caneca com nome da Avanti em posição deitada">
+
+            <h2>Lorem Ipsum</h2>
+
+            <p>
+                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+            </p>
+
+            <p>
+                Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna nisl, vel porttitor augue placerat et.
+            </p>
+        </section>
+
+        <section class="banner-escritorio-avanti">
+            <article class="contato">
+                <p>
+                    Entre em contato conosco e verifique a disponibilidade para sua região!
+                </p>
+            </article>
+        </section>
+
+        <section class="newsletter">
+            <p class="newsletter-cadastro">Cadastre-se na nossa <span>newsletter</span></p>
+
+            <article id="formulario-newsletter">
+                <form action="">
+                    <input type="text" name="userName" id="userName" placeholder="Digite seu nome">
+                    <input type="email" name="userEmail" id="userEmail" placeholder="Digite seu email">
+
+                    <div class="politica-de-privacidade">
+                        <input type="checkbox" name="politicaDePrivacidade" id="politicaDePrivacidade">
+                        <p>Estou de acordo com a <span>Política de Privacidade</span></p>
+                    </div>
+
+                    <input type="submit" value="Cadastrar">
+                </form> 
+            </article>
+
+            
         </section>
     </main>
 
