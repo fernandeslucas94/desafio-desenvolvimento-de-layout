@@ -173,8 +173,10 @@
 
     /* ### ESTILIZAÇÃO DA SEÇÃO DE LANÇAMENTOS ### */
     .lancamentos {
-        height: 33.62rem;
+        height: 28rem;
         width: 100vw;
+
+        margin-top: 3.5rem;
 
         display: flex;
         flex-direction: column;
@@ -238,8 +240,6 @@
         background-color: #00264e;
 
         border-radius: .25em;
-
-        
 
         width: 2.56rem;
         height: 1.43rem;
@@ -337,6 +337,347 @@
         font-weight: 700;
 
         text-decoration: none;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO COM PRIMEIRA CANECA ### */
+    .banner-primeira-caneca {
+        height: 45.75rem;
+        width: 100vw;
+
+        margin-top: 1.4rem;
+    }
+
+    .banner-primeira-caneca img {
+        width: 100%;
+    }
+
+    .banner-primeira-caneca h2 {
+        padding: 1rem;
+
+        font-weight: 700;
+        font-size: 1.5em;
+
+        text-transform: uppercase;
+    }
+
+    .banner-primeira-caneca p {
+        padding-left: 1em;
+        padding-right: 1em;
+
+        font-size: .87em;
+        font-weight: 400;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO COM SEGUNDA CANECA ### */
+    .banner-segunda-caneca {
+        background-color: #DEDEDE;
+
+        height: 44.81rem;
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .banner-segunda-caneca img {
+        width: 100%;
+    }
+
+    .banner-segunda-caneca h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.1em;
+    }
+     
+
+    .banner-segunda-caneca__container-texto {
+        height: 15.12rem;
+        width: 100vw;
+    }
+
+    .banner-segunda-caneca__container-texto--conteudo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding-left: .4em;
+        padding-right: .6em;
+    }
+
+    .banner-segunda-caneca__container-texto--conteudo img {
+        width: 3.5em;
+    }
+
+    .banner-segunda-caneca__container-texto--conteudo p {
+        font-weight: 400;
+        font-size: .7rem;
+
+        margin-left: 1em;
+        line-height: 1.4em;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO COM TERCEIRA CANECA ### */
+    .banner-terceira-caneca img {
+        width: 100vw;
+
+        margin-top: 3.5rem;
+    }
+
+    .banner-terceira-caneca h2 {
+        padding: 1rem;
+
+        font-weight: 700;
+        font-size: 1.5em;
+
+        text-transform: uppercase;
+    }
+
+    .banner-terceira-caneca p {
+        padding-left: 1em;
+        padding-right: 1em;
+
+        font-size: .87em;
+        font-weight: 400;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO COM IMAGEM DO ESCRITÓRIO ### */
+    .banner-escritorio-avanti {
+        height: 28.06rem;
+
+        background: url('../../assets/images/banner-escritorio-avanti.png');
+        background-size: cover;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 2.7rem;
+    }
+
+    .banner-escritorio-avanti .contato {
+        background-color: #005CFF;
+
+        height: 4.68rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-escritorio-avanti .contato p{
+        color: #fff;
+        font-weight: 600;
+        font-size: 1rem;
+
+        margin: auto;
+        text-align: center;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE NEWSLETTER ### */
+    .newsletter {
+        height: 26.62rem;
+        width: 100vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .newsletter-cadastro {
+        font-weight: 600;
+    }
+
+    .newsletter span {
+        color: #005CFF;
+
+        font-weight: 600;
+    }
+
+    #formulario-newsletter {
+        background-color: #F5F5F5;
+
+        height: 17.75rem;
+        width: 20rem;
+
+        border-radius: .6rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #formulario-newsletter form {
+        height: 13rem;
+        width: 20.37rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #formulario-newsletter form input[type=text] {
+        border: none;
+        border-radius: .4em;
+
+        margin-bottom: .5em;
+
+        padding-left: 1em;
+
+        height: 3rem;
+
+        margin-left: .6em;
+        margin-right: .6em;
+    }
+
+    #formulario-newsletter form input[type=email] {
+        border: none;
+        border-radius: .4em;
+
+        padding-left: 1em;
+
+        height: 3rem;
+
+        margin-left: .6em;
+        margin-right: .6em;
+    }
+
+    #formulario-newsletter form input[type=submit] {
+        background-color: #005CFF;
+
+        border: none;
+        border-radius: .6em;
+
+        color: #FFF;
+
+        font-weight: 700;
+
+        padding: .7rem;
+
+        margin: 0 1em;
+    }
+
+    .politica-de-privacidade {
+        height: 1rem;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 1em 0;
+    }
+
+    .politica-de-privacidade p {
+        color: #656565;
+
+        font-size: .75em;
+        font-weight: 700;
+
+        height: 0;
+
+        margin-left: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    .politica-de-privacidade span {
+        font-weight: 700;
+
+        color: #656565;
+
+        text-decoration: underline;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE MIDIAS SOCIAIS E MEIOS DE PAGAMENTOS ### */
+    .midia-e-pagamento {
+        background-color: #F5F5F5;
+
+        height: 30.97rem;
+        width: 100vw;
+    }
+
+    .midias-sociais {
+        height: 11.31rem;
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-icones-midias-sociais {
+        width: 12.12rem;
+        height: 1.62rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-top: 2.5em;
+    }
+
+    .midia-e-pagamento nav {
+        height: 10.12rem;
+        width: 100vw;
+    }
+
+    .meios-pagamento {
+        height: 9.54rem;
+        width: 100vw;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+
+    .midia-e-pagamento nav .item-menu {
+        border-top: 1px solid #DDD;
+        border-bottom: 1px solid #DDD;
+
+        height: 3.37rem;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-left: 1.8em;
+        padding-right: 1em;
+    }
+    
+    .item-menu h3 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    footer {
+        height: 11.64rem;
+        width: 100vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .avanti-e-vtex {
+        height: 8.18rem;
+        width: 22.37rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .avanti-e-vtex p {
+        font-size: .75em;
+        font-weight: 400;
+
+        padding-left: 1em;
+        padding-right: .5em;
     }
 }
 
@@ -918,6 +1259,97 @@
         color: #656565;
 
         text-decoration: underline;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE MIDIAS SOCIAIS E MEIOS DE PAGAMENTOS ### */
+    .midia-e-pagamento {
+        background-color: #F5F5F5;
+
+        height: 30.97rem;
+        width: 100vw;
+    }
+
+    .midias-sociais {
+        height: 11.31rem;
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-icones-midias-sociais {
+        width: 12.12rem;
+        height: 1.62rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-top: 2.5em;
+    }
+
+    .midia-e-pagamento nav {
+        height: 10.12rem;
+        width: 100vw;
+    }
+
+    .meios-pagamento {
+        height: 9.54rem;
+        width: 100vw;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+
+    .midia-e-pagamento nav .item-menu {
+        border-top: 1px solid #DDD;
+        border-bottom: 1px solid #DDD;
+
+        height: 3.37rem;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-left: 1.8em;
+        padding-right: 1em;
+    }
+    
+    .item-menu h3 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    footer {
+        height: 11.64rem;
+        width: 100vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .avanti-e-vtex {
+        height: 8.18rem;
+        width: 22.37rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .avanti-e-vtex p {
+        font-size: .75em;
+        font-weight: 400;
+
+        padding-left: 1em;
+        padding-right: .5em;
     }
 }
 
