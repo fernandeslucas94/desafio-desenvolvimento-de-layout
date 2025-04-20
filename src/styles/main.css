@@ -395,6 +395,9 @@
         font-size: 1.1em;
     }
      
+    .subtitulo-desktop {
+        display: none;
+    }
 
     .banner-segunda-caneca__container-texto {
         height: 15.12rem;
@@ -1078,6 +1081,9 @@
         font-size: 1.25em;
     }
      
+    .subtitulo-desktop {
+        display: none;
+    }
 
     .banner-segunda-caneca__container-texto {
         height: 15.12rem;
@@ -1602,6 +1608,118 @@
     .cards-container .card {
         margin: 0em;
     }
+
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE BANNER DA PRIMEIRA CANECA ### */
+    .banner-primeira-caneca {
+        display: flex;
+
+        height: 27rem;
+
+        width: 80%;
+
+        margin-left: 6rem;
+        margin-bottom: 3.7rem;
+    }
+
+    .banner-primeira-caneca img {
+        height: inherit;
+        width: 45%;
+    }
+
+    .banner-caneca-conteudo {
+        width: 20rem;
+    }
+
+
+    /* ### ESTILIZAÇÃO DO BANNER DA SEGUNDA CANECA ### */
+    .banner-segunda-caneca {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .banner-segunda-caneca__container {
+        width: 80%;
+        height: 80%;
+
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .banner-segunda-caneca__container .imagem-caneca {
+        width: 60%;
+        height: 100%;
+
+        margin-left: 2em;
+    }
+
+    .subtitulo-mobile {
+        display: none;
+    }
+
+    .subtitulo-desktop {
+        display: block;
+
+        font-size: 1.87em;
+        font-weight: 700;
+        color: #4F4F4F;
+    }
+
+    .banner-segunda-caneca__container-texto {
+        height: 25rem;
+        width: 20rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE BANNER DA TERCEIRA CANECA ### */
+    .banner-terceira-caneca {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 2.87rem;
+    }
+
+    .banner-terceira-caneca__container {
+        width: 80%;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .banner-terceira-caneca__container .imagem-caneca {
+        width: 40.75rem;
+        height: 100%;
+
+        margin-left: 2em;
+        margin-top: 0;
+    }
+
+    .banner-terceira-caneca__container-texto {
+        height: 25em;
+        width: 30.43rem;
+    }
+
+
+    /* ### ESTILIZAÇÃO DO SEÇÃO COM BANNER DO ESCRITÓRIO AVANTI ### */
+    .banner-escritorio-avanti .contato{
+        width: 100%;
+
+        margin-top: -5em;
+    }
+
+    .banner-escritorio-avanti {
+        background: url('../../assets/images/banner-escritorio-avanti-desktop.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
 }
 
 
