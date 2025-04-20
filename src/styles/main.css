@@ -37,7 +37,7 @@
         font-weight: 300;
     }
 
-    .icones-e-busca {
+    .icones-e-busca-mobile {
         width: 100vw;
         height: 8.25rem;
 
@@ -46,6 +46,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+    }
+
+    .icones-e-busca-desktop {
+        display: none;
     }
 
     .menu-e-carrinho {
@@ -720,7 +724,7 @@
         font-weight: 300;
     }
 
-    .icones-e-busca {
+    .icones-e-busca-mobile {
         width: 100vw;
         height: 8.25rem;
 
@@ -729,6 +733,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+    }
+
+    .icones-e-busca-desktop {
+        display: none;
     }
 
     .menu-e-carrinho {
@@ -1356,6 +1364,436 @@
 
 /* ### ESTILIZAÇÃO PARA DISPOSITIVOS MAIORES QUE 768px ### */
 @media (min-width: 768px) {
+    .banner-desconto-desktop {
+        width: 100vw;
+        height: 16.7rem;
+    
+        background-color: #E7E7EA;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-desconto-desktop img {
+        width: 22rem;
+    }
+
+    #slide-carousel {
+        display: none;
+    }
+}
+
+
+
+/* ### ESTILIZAÇÃO PARA DISPOSITIVOS MAIORES QUE 1024PX ### */
+@media (min-width: 1024px) {
+    /* ### ESTILIZAÇÕES DE ITENS DO HEADER ### */
+    .cupom-desconto {
+        background-color: #005cff;
+
+        width: 100vw;
+        height: 1.87rem;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cupom-desconto p {
+        color: #FFF;
+        font-weight: 700;
+        font-size: .87em;
+
+        margin: 0;
+    }
+
+    .cupom-desconto__preco {
+        background-color: #6220c1;
+        padding: .2em;
+    }
+
+    .cupom-desconto__desconto {
+        font-weight: 300;
+    }
+
+    .icones-e-busca-mobile {
+        display: none;
+    }
+
+    .icones-e-busca-desktop {
+        width: 100vw;
+        height: 7.37rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-conteudos-header {
+        width: 75%;
+        height: 4.87rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .container-logo-busca-carrinho {
+        width: 100%;
+        height: 1.75rem;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-e-busca-container {
+        width: 60%;
+
+        display: flex;
+        justify-content: space-between;
+
+        position: relative;
+    }
+
+    #busca-produtos-desktop {
+        width: 18rem;
+        height: 2.3rem;
+
+        margin-top: -.2em;
+
+        border: 1px solid #ccc;
+        border-radius: .3em;
+
+        padding-left: .6em;
+    }
+
+    #lupa-busca-desktop {
+        position: absolute;
+
+        right: .5em;
+        top: .2em;
+    }
+
+    .usuario-e-carrinho {
+        width: 10.26rem;
+        height: 1.75rem;
+
+        display: flex;
+    }
+
+    .usuario-nome p {
+        font-size: .7em;
+        font-weight: 600;
+
+        margin-bottom: 0;
+        margin-left: .5em;
+    }
+
+    #nome-usuario {
+        margin-top: -.4em;
+    }
+
+    .usuario-container {
+        display: flex;
+
+        width: 7.23rem;
+        height: 1.75rem;
+    }
+
+    .carrinho-container {
+        position: relative;
+    }
+
+    .itens-carrinho {
+        background-color: #005cff;
+        width: .5em;
+        height: .5em;
+
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 1rem;
+        
+        padding: .7rem;
+
+        font-weight: 400;
+
+        position: absolute;
+
+        top: -.6em;
+        right: -.5em;
+    }
+
+    .menu-superior {
+        width: 100%;
+        height: 1.37rem;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .todas-as-categorias {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        width: 10em;
+        height: inherit;
+    }
+
+    .todas-as-categorias p {
+        margin: 0;
+        font-size: .8em;
+        font-weight: 700;
+    }
+
+    .todas-as-categorias .menu-hamburger {
+        width: .87em;
+        height: .62em;
+    }
+
+    .itens-departamento {
+        height: inherit;
+
+        margin-left: 0em;
+
+        width: 30.68rem;
+
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        
+    }
+
+    .itens-departamento span {
+        font-size: .7rem;
+
+        margin-top: .2em;
+    }
+
+
+    /* ### ESTILIZAÇÃO DO BANNER DE DESCONTO ### */
+    .banner-desconto-desktop {
+        width: 100vw;
+        height: 16.7rem;
+    
+        background-color: #E7E7EA;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-desconto-desktop img {
+        width: 22rem;
+    }
+
+    #slide-carousel {
+        display: none;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE LANÇAMENTOS ### */
+    .lancamentos__container {
+        width: 83%;
+    }
+
+    .cards-container .card {
+        margin: 0em;
+    }
+}
+
+
+/* ### ESTILIZAÇÃO PARA DISPOSITIVOS MAIORES QUE 1024PX ### */
+@media (min-width: 1280px) {
+    /* ### ESTILIZAÇÕES DE ITENS DO HEADER ### */
+    .cupom-desconto {
+        background-color: #005cff;
+
+        width: 100vw;
+        height: 1.87rem;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cupom-desconto p {
+        color: #FFF;
+        font-weight: 700;
+        font-size: .87em;
+
+        margin: 0;
+    }
+
+    .cupom-desconto__preco {
+        background-color: #6220c1;
+        padding: .2em;
+    }
+
+    .cupom-desconto__desconto {
+        font-weight: 300;
+    }
+
+    .icones-e-busca-mobile {
+        display: none;
+    }
+
+    .icones-e-busca-desktop {
+        width: 100vw;
+        height: 7.37rem;
+
+        border: 1px solid green;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-conteudos-header {
+        width: 75%;
+        height: 4.87rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .container-logo-busca-carrinho {
+        width: 100%;
+        height: 1.75rem;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-e-busca-container {
+        width: 60%;
+
+        display: flex;
+        justify-content: space-between;
+
+        position: relative;
+    }
+
+    #busca-produtos-desktop {
+        width: 36rem;
+        height: 2.3rem;
+
+        margin-top: -.2em;
+        margin-left: 2em;
+
+        border: 1px solid #ccc;
+        border-radius: .3em;
+
+        padding-left: .6em;
+    }
+
+    #lupa-busca-desktop {
+        /* position: absolute; */
+
+        margin-right: -6em;
+        margin-top: .1em;
+
+        right: -.2rem;
+        top: .2em;
+    }
+
+    .usuario-e-carrinho {
+        width: 10.26rem;
+        height: 1.75rem;
+
+        display: flex;
+    }
+
+    .usuario-nome p {
+        font-size: .7em;
+        font-weight: 600;
+
+        margin-bottom: 0;
+        margin-left: .5em;
+    }
+
+    #nome-usuario {
+        margin-top: -.4em;
+    }
+
+    .usuario-container {
+        display: flex;
+
+        width: 7.23rem;
+        height: 1.75rem;
+    }
+
+    .carrinho-container {
+        position: relative;
+    }
+
+    .itens-carrinho {
+        background-color: #005cff;
+        width: .5em;
+        height: .5em;
+
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 1rem;
+        
+        padding: .7rem;
+
+        font-weight: 400;
+
+        position: absolute;
+
+        top: -.6em;
+        right: -.5em;
+    }
+
+    .menu-superior {
+        width: 100%;
+        height: 1.37rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .todas-as-categorias {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 10em;
+        height: inherit;
+    }
+
+    .todas-as-categorias p {
+        margin: 0;
+        font-size: .87em;
+        font-weight: 700;
+    }
+
+    .todas-as-categorias .menu-hamburger {
+        width: .87em;
+        height: .62em;
+    }
+
+    .itens-departamento {
+        width: 54rem;
+
+        display: flex;
+        gap: 1.2em;
+        
+    }
+
+    .itens-departamento span {
+        font-size: .87rem;
+    }
+
+
+    /* ### ESTILIZAÇÃO DO BANNER DE DESCONTO ### */
     .banner-desconto-desktop {
         width: 100vw;
         height: 16.7rem;

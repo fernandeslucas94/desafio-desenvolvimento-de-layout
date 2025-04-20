@@ -19,7 +19,7 @@
             <p>Utilize o cupom <span class="cupom-desconto__desconto">DESCONTO10</span></p>
         </div>
 
-        <section class="icones-e-busca">
+        <section class="icones-e-busca-mobile">
             <div class="menu-e-carrinho">
                 <nav class="menu-e-carrinho__menu">
                     <div class="menu-hamburger">
@@ -50,11 +50,71 @@
 
             <p class="resultado-busca"></p>
         </section>
+
+        <!-- ### Header utilizando em dispositivos desktop ### -->
+        <section class="icones-e-busca-desktop">
+            <article class="container-conteudos-header">
+                <article class="container-logo-busca-carrinho">
+                    <div class="logo-e-busca-container">
+                        <img src="../assets/images/avanti-logo.png" alt="">
+
+                        <form action="">
+                            <input type="text" name="busca-produtos-desktop" id="busca-produtos-desktop" placeholder="Digite aqui o que você procura">
+
+                            <img id="lupa-busca-desktop" src="../assets/images/lupa.png" alt="">
+                        </form>
+                    </div>
+
+                    <div class="usuario-e-carrinho">
+                        <div class="usuario-container">
+                            <img src="../assets/images/icone-usuario.png" alt="">
+                            <div class="usuario-nome">
+                                <p>Olá,</p>
+                                <p id="nome-usuario">Nome cliente</p>
+                            </div>
+                        </div>
+                        
+                        <div class="carrinho-container">
+                            <figure>
+                                <img src="../assets/images/carrinho.png" alt="">
+                            </figure>
+            
+                            <div class="itens-carrinho">2</div>
+                        </div>
+                    </div>
+                </article>
+
+                <p class="resultado-busca-desktop"></p>
+
+                <nav class="menu-superior">
+                    <article class="todas-as-categorias">
+                        <nav class="menu-hamburger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </nav>
+
+                        <p>Todas as Categorias</p>
+                    </article>
+
+                    <nav class="itens-departamento">
+                        <span>Departamento</span>
+                        <span>Departamento</span>
+                        <span>Departamento</span>
+                        <span>Departamento</span>
+                        <span>Departamento</span>
+                        <span>Departamento</span>
+                        <span>Departamento</span>
+                        <span>Departamento</span>
+                    </nav>
+                </nav>
+            </article>
+        </section>
     </header>
     
     <main>
         <!-- ### A section abaixo, contém os elementos do banner de desconto que está sendo utilizando para dispositivos mobile ### -->
-        <section id="slide-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <section id="slide-carousel" class="carousel slide slide-mobile" data-bs-ride="carousel" data-bs-interval="3000">
             <ol class="carousel-indicators">
                 <li class="active" data-bs-target="#slide-carousel" data-bs-slide-to="0"></li>
                 <li data-bs-target="#slide-carousel" data-bs-slide-to="1"></li>
@@ -93,7 +153,7 @@
          </section>
 
          <!-- ### A section abaixo está relacionada à área com os lançamentos de produtos contendo carrosel com imagens e preços ### -->
-        <section class="lancamentos carousel" id="slide-carousel" data-bs-ride="carousel" data-bs-interval="3000">
+        <section class="lancamentos carousel" id="slide-lancamentos" data-bs-ride="carousel" data-bs-interval="3000">
             <ol class="carousel-indicators">
                 <li data-bs-target="#slide-carousel-lancamento" data-bs-slide-to="0" class="active"></li>
                 <li data-bs-target="#slide-carousel-lancamento" data-bs-slide-to="1"></li>
@@ -107,6 +167,31 @@
 
                 <article class="cards-container">
                     <div class="card carousel-item active">
+                        <div class="container-imagem-lancamento">
+                            <div class="lancamento-novo-produto">Novo</div>
+                        </div>
+
+                        <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+
+                        <article class="preco-container">
+                            <div class="preco-e-desconto">
+                                <div class="preco-novo">
+                                    <span class="preco-anterior"><del>R$ 100,00</del></span>
+                                    <span class="preco-atual">R$79,90</span>
+                                </div>
+
+                                <span class="porcentagem-desconto">10% OFF</span>
+                            </div>
+                            
+                            <div class="parcelamento">Ou em até <span>10x de R$ 7,90</span></div>
+                        </article>
+
+                        <span class="botao-comprar">
+                            <a href="#">Comprar</a>
+                        </span>
+                    </div>
+
+                    <div class="card carousel-item">
                         <div class="container-imagem-lancamento">
                             <div class="lancamento-novo-produto">Novo</div>
                         </div>
