@@ -449,6 +449,11 @@
         font-weight: 400;
     }
 
+    /* ### ESTILIZAÇÃO DA SEÇÃO CONTENDO SEGUNDO CARROSEL DE LANÇAMEMTO ### */
+    .lancamentos-desktop {
+        display: none;
+    }
+
     /* ### ESTILIZAÇÃO DA SEÇÃO COM IMAGEM DO ESCRITÓRIO ### */
     .banner-escritorio-avanti {
         height: 28.06rem;
@@ -901,7 +906,6 @@
     }
 
     .cards-container {
-        width: 100%;
         height: 22.81rem;
 
         display: flex;
@@ -935,8 +939,6 @@
         background-color: #00264e;
 
         border-radius: .25em;
-
-        
 
         width: 2.56rem;
         height: 1.43rem;
@@ -1130,6 +1132,11 @@
         font-weight: 400;
     }
 
+    /* ### ESTILIZAÇÃO DA SEÇÃO CONTENDO SEGUNDO CARROSEL DE LANÇAMEMTO ### */
+    .lancamentos-desktop {
+        display: none;
+    }
+
     /* ### ESTILIZAÇÃO DA SEÇÃO COM IMAGEM DO ESCRITÓRIO ### */
     .banner-escritorio-avanti {
         height: 28.06rem;
@@ -1276,6 +1283,10 @@
     }
 
     /* ### ESTILIZAÇÃO DA SEÇÃO DE MIDIAS SOCIAIS E MEIOS DE PAGAMENTOS ### */
+    .midia-menu-e-pagamento-desktop {
+        display: none;
+    }
+
     .midia-e-pagamento {
         background-color: #F5F5F5;
 
@@ -1365,27 +1376,708 @@
         padding-left: 1em;
         padding-right: .5em;
     }
+
+    .avanti-e-vtex .desktop {
+        display: none;
+    }
 }
 
 
 /* ### ESTILIZAÇÃO PARA DISPOSITIVOS MAIORES QUE 768px ### */
 @media (min-width: 768px) {
-    .banner-desconto-desktop {
+    /* ### ESTILIZAÇÕES DE ITENS DO HEADER ### */
+    .cupom-desconto {
+        background-color: #005cff;
+
         width: 100vw;
-        height: 16.7rem;
-    
-        background-color: #E7E7EA;
+        height: 3.25rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .2em;
+    }
+
+    .cupom-desconto p {
+        color: #FFF;
+        font-weight: 500;
+        font-size: .9em;
+
+        margin: 0;
+    }
+
+    .cupom-desconto__preco {
+        background-color: #6220c1;
+        padding: .2em;
+    }
+
+    .cupom-desconto__desconto {
+        font-weight: 300;
+    }
+
+    .icones-e-busca-mobile {
+        width: 100vw;
+        height: 8.25rem;
+
+        margin-top: .5em;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .icones-e-busca-desktop {
+        display: none;
+    }
+
+    .menu-e-carrinho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .menu-hamburger {
+        width: 23px;
+        height: 21px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .menu-hamburger div {
+        border: .5px solid #000
+    }
+
+    .carrinho-wrapper {
+        position: relative;
+    }
+
+    .itens-carrinho {
+        background-color: #005cff;
+        width: 1em;
+        height: 1em;
+
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 1rem;
+        
+        padding: .7rem;
+
+        font-weight: 400;
+
+        position: absolute;
+
+        top: -.6em;
+        right: -.5em;
+    }
+
+    .busca {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #busca-produtos {
+        height: 2.5rem;
+        width: 96vw;
+
+        border: 1px solid #ccc;
+        border-radius: .7em;
+
+        margin-left: .8em;
+        margin-right: .8em;
+
+        padding: 1em;
+    }
+
+    #busca-produtos:focus {
+        outline: 0;
+    }
+
+    .icone-lupa {
+        width: 1.16rem;
+        height: 1.16rem;
+
+        margin-left: 85%;
+
+        position: absolute;
+    }
+
+    .resultado-busca {
+        margin-left: .8em;
+        margin-top: .5em;
+
+        font-weight: 400;
+    }
+
+
+    /* ### ESTILIZAÇÃO DO BANNER DE DESCONTO ### */
+    .banner-desconto-desktop {
+        display: none;
+    }
+
+    .slide {
+        height: 19.12rem;
+    }
+
+    .carousel-inner .w-100 {
+        height: 19.12rem;
+    }
+
+    .carousel-item {
+        height: inherit;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .carousel .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #303030;
+    }
+
+    #carousel {
+        display: block;
+    }
+
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE LANÇAMENTOS ### */
+    .lancamentos {
+        height: 33.62rem;
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .lancamentos__container {
+        width: 21rem;
+        height: 26.62rem;
+
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .subtitulo-e-botao {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .subtitulo-e-botao h2 {
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+    .subtitulo-e-botao a {
+        font-size: .87em;
+        font-weight: 700;
+        text-decoration: underline;
+        color: #000;
+    }
+
+    .cards-container {
+        height: 22.81rem;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cards-container .card {
+        border: 1px solid #ddd;
+
+        width: 10em;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cards-container .carousel-inner {
+        display: flex;
+    }
+
+    .card .container-imagem-lancamento {
+        background: url('../../assets/images/home-blusa-branca.png');
+
+        height: 9.87rem;
+        width: 9.87rem;
+    }
+
+    .lancamento-novo-produto {
+        background-color: #00264e;
+
+        border-radius: .25em;
+
+        width: 2.56rem;
+        height: 1.43rem;
+    }
+
+    .lancamento-novo-produto {
+        color: #FFF;
+        font-size: .62rem;
+        font-weight: 700;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card h3 {
+        font-size: .87em;
+        font-weight: 400;
+
+        margin-left: .6em;
+    }
+
+    .preco-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: 4rem;
+    }
+
+    .preco-e-desconto {
+        display: flex;
+        justify-content: space-between;
+
+        height: 2.37rem;
+    }
+
+    .porcentagem-desconto {
+        background-color: #5EC0BE;
+
+        color: #FFF;
+        font-size: 0.68em;
+        font-weight: 700;
+
+        height: 1.25rem;
+        width: 4rem;
+
+        text-align: center;
+    }
+
+    .preco-e-desconto .preco-anterior {
+        font-size: .75em;
+        font-weight: 400;
+    }
+
+    .preco-e-desconto .preco-atual {
+        font-weight: 700;
+    }
+
+    .preco-novo {
+        display: flex;
+        flex-direction: column;
+
+        height: 2.36rem;
+    }
+
+    .parcelamento {
+        font-size: 0.75em;
+    }
+
+    .parcelamento span {
+        font-weight: 700;
+    }
+
+    .botao-comprar {
+        width: 9.2rem;
+        height: 2.3rem;
+
+        margin-bottom: .6em;
+
+        background: #005CFF;
+
+        border-radius: .3em;
 
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .banner-desconto-desktop img {
-        width: 22rem;
+    .botao-comprar a {
+        color: #FFF;
+        font-size: 0.87em;
+        font-weight: 700;
+
+        text-decoration: none;
     }
 
-    #slide-carousel {
+    /* ### ESTILIZAÇÃO DA SEÇÃO COM PRIMEIRA CANECA ### */
+    .banner-primeira-caneca {
+        height: 45.75rem;
+        width: 100vw;
+
+        margin-top: 1.4rem;
+
+    }
+
+    .banner-primeira-caneca img {
+        width: 100%;
+    }
+
+    .banner-primeira-caneca h2 {
+        padding: 1rem;
+
+        font-weight: 700;
+        font-size: 1.5em;
+
+        text-transform: uppercase;
+    }
+
+    .banner-primeira-caneca p {
+        padding-left: 1em;
+        padding-right: 1em;
+
+        font-size: .87em;
+        font-weight: 400;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO COM SEGUNDA CANECA ### */
+    .banner-segunda-caneca {
+        background-color: #DEDEDE;
+
+        height: 44.81rem;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .banner-segunda-caneca h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.25em;
+    }
+     
+    .subtitulo-desktop {
+        display: none;
+    }
+
+    .banner-segunda-caneca__container .imagem-caneca {
+        width: 100vw;
+    }
+
+    .banner-segunda-caneca__container-texto {
+        height: 15.12rem;
+        width: 21.87rem;
+    }
+
+    .banner-segunda-caneca__container-texto--conteudo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding-left: .4em;
+    }
+
+    .banner-segunda-caneca__container-texto--conteudo p {
+        font-weight: 400;
+        font-size: .8rem;
+
+        margin-left: 1em;
+        line-height: 1.4em;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO COM TERCEIRA CANECA ### */
+    .banner-terceira-caneca img {
+        width: 100vw;
+
+        margin-top: 3.5rem;
+    }
+
+    .banner-terceira-caneca h2 {
+        padding: 1rem;
+
+        font-weight: 700;
+        font-size: 1.5em;
+
+        text-transform: uppercase;
+    }
+
+    .banner-terceira-caneca p {
+        padding-left: 1em;
+        padding-right: 1em;
+
+        font-size: .87em;
+        font-weight: 400;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO CONTENDO SEGUNDO CARROSEL DE LANÇAMEMTO ### */
+    .lancamentos-desktop {
+        display: none;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO COM IMAGEM DO ESCRITÓRIO ### */
+    .banner-escritorio-avanti {
+        height: 28.06rem;
+        width: 100%;
+
+        background: url('../../assets/images/banner-escritorio-avanti.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0em;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 2.7rem;
+    }
+
+    .banner-escritorio-avanti .contato {
+        background-color: #005CFF;
+
+        height: 4.68rem;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-escritorio-avanti .contato p{
+        color: #fff;
+        font-weight: 600;
+        font-size: 1rem;
+
+        margin: auto;
+        text-align: center;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE NEWSLETTER ### */
+    .newsletter {
+        height: 26.62rem;
+        width: 100vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .newsletter-cadastro {
+        font-weight: 600;
+    }
+
+    .newsletter span {
+        color: #005CFF;
+
+        font-weight: 600;
+    }
+
+    #formulario-newsletter {
+        background-color: #F5F5F5;
+
+        height: 17.75rem;
+        width: 20rem;
+
+        border-radius: .6rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #formulario-newsletter form {
+        height: 13rem;
+        width: 20.37rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #formulario-newsletter form input[type=text] {
+        border: none;
+        border-radius: .4em;
+
+        margin-bottom: .5em;
+
+        padding-left: 1em;
+
+        height: 3rem;
+        width: 85%;
+
+        margin-left: .6em;
+        margin-right: .6em;
+    }
+
+    #formulario-newsletter form input[type=email] {
+        border: none;
+        border-radius: .4em;
+
+        padding-left: 1em;
+
+        height: 3rem;
+        width: 85%;
+
+        margin-left: .6em;
+        margin-right: .6em;
+        margin-bottom: .6em;
+    }
+
+    #formulario-newsletter form input[type=submit] {
+        background-color: #005CFF;
+
+        border: none;
+        border-radius: .6em;
+
+        width: 85%;
+
+        color: #FFF;
+
+        font-weight: 700;
+
+        padding: .7rem;
+    }
+
+    .politica-de-privacidade {
+        height: 1rem;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: .5em 0;
+    }
+
+    .politica-de-privacidade p {
+        color: #656565;
+
+        font-size: .75em;
+        font-weight: 700;
+
+        height: 0;
+
+        margin-left: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    .politica-de-privacidade span {
+        font-weight: 700;
+
+        color: #656565;
+
+        text-decoration: underline;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE MIDIAS SOCIAIS E MEIOS DE PAGAMENTOS ### */
+    .midia-menu-e-pagamento-desktop {
+        display: none;
+    }
+
+    .midia-e-pagamento {
+        background-color: #F5F5F5;
+
+        height: 30.97rem;
+        width: 100vw;
+    }
+
+    .midias-sociais {
+        height: 11.31rem;
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-icones-midias-sociais {
+        width: 12.12rem;
+        height: 1.62rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-top: 2.5em;
+    }
+
+    .midia-e-pagamento nav {
+        height: 10.12rem;
+        width: 100vw;
+    }
+
+    .meios-pagamento {
+        height: 9.54rem;
+        width: 100vw;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+
+    .midia-e-pagamento nav .item-menu {
+        border-top: 1px solid #DDD;
+        border-bottom: 1px solid #DDD;
+
+        height: 3.37rem;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-left: 1.8em;
+        padding-right: 1em;
+    }
+    
+    .item-menu h3 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    footer {
+        height: 11.64rem;
+        width: 100vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .avanti-e-vtex {
+        height: 8.18rem;
+        width: 22.37rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .avanti-e-vtex p {
+        font-size: .75em;
+        font-weight: 400;
+
+        padding-left: 1em;
+        padding-right: .5em;
+    }
+
+    .avanti-e-vtex .desktop {
         display: none;
     }
 }
@@ -1613,6 +2305,7 @@
     /* ### ESTILIZAÇÃO DA SEÇÃO DE BANNER DA PRIMEIRA CANECA ### */
     .banner-primeira-caneca {
         display: flex;
+        justify-content: center;
 
         height: 27rem;
 
@@ -1622,9 +2315,17 @@
         margin-bottom: 3.7rem;
     }
 
+    .banner-primeira-caneca__container {
+
+        display: flex;
+        justify-content: center;
+
+        width: inherit;
+    }
+
     .banner-primeira-caneca img {
         height: inherit;
-        width: 45%;
+        width: 55%;
     }
 
     .banner-caneca-conteudo {
@@ -1706,6 +2407,12 @@
         width: 30.43rem;
     }
 
+    /* ### ESTILIZAÇÃO DA SEÇÃO CONTENDO SEGUNDO CARROSEL DE LANÇAMEMTO ### */
+    .lancamentos-desktop {
+        display: flex;
+    }
+    
+
 
     /* ### ESTILIZAÇÃO DO SEÇÃO COM BANNER DO ESCRITÓRIO AVANTI ### */
     .banner-escritorio-avanti .contato{
@@ -1719,12 +2426,288 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
-    
+
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE NEWSLETTER ### */
+    .newsletter {
+        height: 20.68rem;
+        width: 100vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .newsletter-cadastro {
+        font-weight: 600;
+    }
+
+    .newsletter span {
+        color: #005CFF;
+
+        font-weight: 600;
+    }
+
+    #formulario-newsletter {
+        background-color: #F5F5F5;
+
+        height: 10em;
+        width: 95%;
+
+        border-radius: .6rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #formulario-newsletter form {
+        height: 13rem;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #formulario-newsletter form input[type=text] {
+        border: none;
+        border-radius: .4em;
+
+        margin-bottom: .5em;
+
+        padding-left: 1em;
+
+        height: 3rem;
+
+        margin-left: .6em;
+        margin-right: .6em;
+    }
+
+    #formulario-newsletter form input[type=email] {
+        border: none;
+        border-radius: .4em;
+
+        padding-left: 1em;
+
+        height: 3rem;
+
+        margin-left: .6em;
+        margin-right: .6em;
+    }
+
+    #formulario-newsletter form input[type=submit] {
+        background-color: #005CFF;
+
+        border: none;
+        border-radius: .6em;
+
+        height: 3em;
+        width: 7.56em;
+
+        color: #FFF;
+
+        font-weight: 700;
+
+        padding: .7rem;
+    }
+
+    .politica-de-privacidade {
+        height: 1rem;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: .5em 0;
+    }
+
+    .politica-de-privacidade p {
+        color: #656565;
+
+        font-size: .75em;
+        font-weight: 700;
+
+        height: 0;
+
+        margin-left: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    .politica-de-privacidade span {
+        font-weight: 700;
+
+        color: #656565;
+
+        text-decoration: underline;
+    }
+
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE MIDIA, MENU INFERIOR E PAGAMENTO EM DISPOSITIVOS DESKTOP ### */
+
+    /* O elemento .midia-e-pagamento refere-se ao seção de mesmo nome em dispositivos mobile */
+    .midia-e-pagamento {
+        display: none;
+    }
+
+    .midia-menu-e-pagamento-desktop {
+        width: 100vw;
+        height: 24.12rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .midia-e-menu-container {
+        width: 86%;
+        height: 10.62rem;
+
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    .logo-e-midias-sociais {
+        width: 12.12rem;
+        height: 5.81rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .logo-avanti-desktop {
+        width: 10em;
+    }
+
+    .midias-sociais {
+        width: 100%;
+        height: 1.62em;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-inferior {
+
+        height: inherit;
+        width: 68%;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .institucional {
+        width: 11.62em;
+        height: 8.87em;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .central-de-ajuda {
+        width: 25%;
+        height: 10.62em;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .atendimento {
+
+        width: 37%;
+        height: 8.87em;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .atendimento-container {
+        height: 80%;
+
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 1em;
+    }
+
+    .atendimento-container span {
+        display: flex;
+        align-items: center;
+
+        height: 1.8em;
+    }
+
+    .atendimento-container span p {
+        font-size: .75em;
+
+        margin-left: .2em;
+        margin-top: 1.3em;
+    }
+
+    .atendimento-container span h5 {
+        font-weight: 700;
+        font-size: .87em;
+    }
+
+    .atendimento-container h5 {
+        margin-bottom: 0em;
+    }
+
+    .horario-atendimento {
+        font-size: .75em;
+        margin: 0;
+    }
+
+    #horario-atendimento-subtitulo {
+        margin-top: -.1em;
+
+        font-weight: 700;
+    }
+
+    .menu-inferior h4 {
+        font-size: .75em;
+        font-weight: 700;
+
+        padding-top: .3em;
+    }
+
+    .menu-inferior h5 {
+        font-size: .87em;
+        font-weight: 400;
+    }
+
+    /* ### ESTILIZAÇÃO DO FOOTER ### */
+    .avanti-e-vtex  {
+        width: 80%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .avanti-e-vtex .desktop {
+        text-align: center;
+
+        display: block;
+    }
+
+    .avanti-e-vtex .mobile {
+        display: none;
+    }
 }
 
 
-/* ### ESTILIZAÇÃO PARA DISPOSITIVOS MAIORES QUE 1024PX ### */
+/* ### ESTILIZAÇÃO PARA DISPOSITIVOS MAIORES QUE 1280PX ### */
 @media (min-width: 1280px) {
+
     /* ### ESTILIZAÇÕES DE ITENS DO HEADER ### */
     .cupom-desconto {
         background-color: #005cff;
@@ -1761,8 +2744,6 @@
         width: 100vw;
         height: 7.37rem;
 
-        border: 1px solid green;
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1795,11 +2776,10 @@
     }
 
     #busca-produtos-desktop {
-        width: 36rem;
+        width: 18rem;
         height: 2.3rem;
 
         margin-top: -.2em;
-        margin-left: 2em;
 
         border: 1px solid #ccc;
         border-radius: .3em;
@@ -1808,12 +2788,9 @@
     }
 
     #lupa-busca-desktop {
-        /* position: absolute; */
+        position: absolute;
 
-        margin-right: -6em;
-        margin-top: .1em;
-
-        right: -.2rem;
+        right: .5em;
         top: .2em;
     }
 
@@ -1875,13 +2852,12 @@
 
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
 
     .todas-as-categorias {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
 
         width: 10em;
         height: inherit;
@@ -1889,7 +2865,7 @@
 
     .todas-as-categorias p {
         margin: 0;
-        font-size: .87em;
+        font-size: .8em;
         font-weight: 700;
     }
 
@@ -1899,15 +2875,22 @@
     }
 
     .itens-departamento {
-        width: 54rem;
+        height: inherit;
+
+        margin-left: 0em;
+
+        width: 30.68rem;
 
         display: flex;
-        gap: 1.2em;
+        align-items: center;
+        gap: 1em;
         
     }
 
     .itens-departamento span {
-        font-size: .87rem;
+        font-size: .7rem;
+
+        margin-top: .2em;
     }
 
 
@@ -1928,6 +2911,450 @@
     }
 
     #slide-carousel {
+        display: none;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE LANÇAMENTOS ### */
+    .lancamentos__container {
+        width: 83%;
+    }
+
+    .cards-container {
+        height: 25.56rem;
+    }
+
+    .cards-container .card {
+        width: 14em;
+        height: 25.56rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card .container-imagem-lancamento {
+        background: url('../../assets/images/home-blusa-branca-desktop.png')!important;
+        background-size: cover;
+
+        height: 14em;
+        width: 100%;
+    }
+
+    .cards-container .card h3 {
+
+        text-align: center;
+    }
+
+    .preco-container {
+        width: 70%;
+
+        margin-left: .5em;
+    }
+
+    .botao-comprar {
+        width: 90%;
+
+        margin-left: .7em;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE BANNER DA PRIMEIRA CANECA ### */
+    .banner-primeira-caneca {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        height: 34rem;
+    }
+
+    .banner-primeira-caneca img {
+        height: inherit;
+        width: 40%;
+    }
+
+    .banner-caneca-conteudo {
+        width: 20rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    /* ### ESTILIZAÇÃO DO BANNER DA SEGUNDA CANECA ### */
+    .banner-segunda-caneca {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .banner-segunda-caneca__container {
+        width: 80%;
+        height: 80%;
+
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-segunda-caneca__container .imagem-caneca {
+        width: 38%;
+        height: 100%;
+
+        margin-left: 2em;
+    }
+
+    .subtitulo-mobile {
+        display: none;
+    }
+
+    .subtitulo-desktop {
+        display: block;
+
+        font-size: 1.87em;
+        font-weight: 700;
+        color: #4F4F4F;
+    }
+
+    .banner-segunda-caneca__container-texto {
+        height: 25rem;
+        width: 20rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE BANNER DA TERCEIRA CANECA ### */
+    .banner-terceira-caneca {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 2.87rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .banner-terceira-caneca__container {
+        width: 80%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-terceira-caneca__container .imagem-caneca {
+        width: 30rem;
+        height: 100%;
+
+        margin-left: 2em;
+        margin-top: 0;
+    }
+
+    .banner-terceira-caneca__container-texto {
+        height: 25em;
+        width: 23rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO CONTENDO SEGUNDO CARROSEL DE LANÇAMEMTO ### */
+    .lancamentos-desktop {
+        display: flex;
+    }
+    
+
+
+    /* ### ESTILIZAÇÃO DO SEÇÃO COM BANNER DO ESCRITÓRIO AVANTI ### */
+    .banner-escritorio-avanti .contato{
+        width: 100%;
+
+        margin-top: 0em;
+    }
+
+    .banner-escritorio-avanti {
+        background: url('../../assets/images/banner-escritorio-avanti-desktop.png');
+        background-size: cover;
+    }
+
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE NEWSLETTER ### */
+    .newsletter {
+        height: 20.68rem;
+        width: 100vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .newsletter-cadastro {
+        font-weight: 600;
+    }
+
+    .newsletter span {
+        color: #005CFF;
+
+        font-weight: 600;
+    }
+
+    #formulario-newsletter {
+        background-color: #F5F5F5;
+
+        height: 10em;
+        width: 95%;
+
+        border-radius: .6rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #formulario-newsletter form {
+        height: 13rem;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #formulario-newsletter form input[type=text] {
+        border: none;
+        border-radius: .4em;
+
+        margin-bottom: .5em;
+
+        padding-left: 1em;
+
+        height: 3rem;
+        width: 20rem;
+
+        margin-left: .6em;
+        margin-right: .6em;
+    }
+
+    #formulario-newsletter form input[type=email] {
+        border: none;
+        border-radius: .4em;
+
+        padding-left: 1em;
+
+        height: 3rem;
+        width: 20rem;
+
+        margin-left: .6em;
+        margin-right: .6em;
+    }
+
+    #formulario-newsletter form input[type=submit] {
+        background-color: #005CFF;
+
+        border: none;
+        border-radius: .6em;
+
+        height: 3em;
+        width: 9em;
+
+        color: #FFF;
+
+        font-weight: 700;
+
+        padding: .7rem;
+    }
+
+    .politica-de-privacidade {
+        height: 1rem;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: .5em 0;
+    }
+
+    .politica-de-privacidade p {
+        color: #656565;
+
+        font-size: .75em;
+        font-weight: 700;
+
+        height: 0;
+
+        margin-left: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    .politica-de-privacidade span {
+        font-weight: 700;
+
+        color: #656565;
+
+        text-decoration: underline;
+    }
+
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE MIDIA, MENU INFERIOR E PAGAMENTO EM DISPOSITIVOS DESKTOP ### */
+
+    /* O elemento .midia-e-pagamento refere-se ao seção de mesmo nome em dispositivos mobile */
+    .midia-e-pagamento {
+        display: none;
+    }
+
+    .midia-menu-e-pagamento-desktop {
+        width: 100vw;
+        height: 24.12rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .midia-e-menu-container {
+        width: 86%;
+        height: 10.62rem;
+
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    .logo-e-midias-sociais {
+        width: 12.12rem;
+        height: 5.81rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .logo-avanti-desktop {
+        width: 10em;
+    }
+
+    .midias-sociais {
+        width: 100%;
+        height: 1.62em;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-inferior {
+
+        height: inherit;
+        width: 68%;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .institucional {
+        width: 11.62em;
+        height: 8.87em;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .central-de-ajuda {
+        width: 25%;
+        height: 10.62em;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .atendimento {
+
+        width: 37%;
+        height: 8.87em;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .atendimento-container {
+        height: 80%;
+
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 1em;
+    }
+
+    .atendimento-container span {
+        display: flex;
+        align-items: center;
+
+        height: 1.8em;
+    }
+
+    .atendimento-container span p {
+        font-size: .75em;
+
+        margin-left: .2em;
+        margin-top: 1.3em;
+    }
+
+    .atendimento-container span h5 {
+        font-weight: 700;
+        font-size: .87em;
+    }
+
+    .atendimento-container h5 {
+        margin-bottom: 0em;
+    }
+
+    .horario-atendimento {
+        font-size: .75em;
+        margin: 0;
+    }
+
+    #horario-atendimento-subtitulo {
+        margin-top: -.1em;
+
+        font-weight: 700;
+    }
+
+    .menu-inferior h4 {
+        font-size: .75em;
+        font-weight: 700;
+
+        padding-top: .3em;
+    }
+
+    .menu-inferior h5 {
+        font-size: .87em;
+        font-weight: 400;
+    }
+
+    /* ### ESTILIZAÇÃO DO FOOTER ### */
+    .avanti-e-vtex  {
+        width: 80%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .avanti-e-vtex .desktop {
+        text-align: center;
+
+        display: block;
+    }
+
+    .avanti-e-vtex .mobile {
         display: none;
     }
 }
