@@ -196,6 +196,14 @@
         margin-right: 1em;
     }
 
+    .desktop {
+        display: none;
+    }
+
+    .cards-container-desktop {
+        display: none;
+    }
+
     .subtitulo-e-botao {
         display: flex;
         justify-content: space-between;
@@ -691,7 +699,24 @@
         padding-left: 1em;
         padding-right: .5em;
     }
+
+
+    .avanti-e-vtex .desktop {
+        display: none;
+    }
+
+    .midia-menu-e-pagamento-desktop {
+        display: none;
+    }
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -849,10 +874,6 @@
         height: 19.12rem;
     }
 
-    .carousel-item {
-        height: inherit;
-    }
-
     li {
         list-style: none;
     }
@@ -886,6 +907,14 @@
 
         margin-left: 1em;
         margin-right: 1em;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .cards-container-desktop {
+        display: none;
     }
 
     .subtitulo-e-botao {
@@ -1369,6 +1398,10 @@
         
     }
 
+    .avanti-e-vtex .desktop {
+        display: none;
+    }
+
     .avanti-e-vtex p {
         font-size: .75em;
         font-weight: 400;
@@ -1376,11 +1409,14 @@
         padding-left: 1em;
         padding-right: .5em;
     }
-
-    .avanti-e-vtex .desktop {
-        display: none;
-    }
 }
+
+
+
+
+
+
+
 
 
 /* ### ESTILIZAÇÃO PARA DISPOSITIVOS MAIORES QUE 768px ### */
@@ -1572,6 +1608,14 @@
         margin-right: 1em;
     }
 
+    .desktop {
+        display: none;
+    }
+
+    .cards-container-desktop {
+        display: none;
+    }
+
     .subtitulo-e-botao {
         display: flex;
         justify-content: space-between;
@@ -1755,12 +1799,19 @@
         background-color: #DEDEDE;
 
         height: 44.81rem;
+
+        display: flex;
+
+        margin-top: 18rem;
+    }
+
+    .banner-segunda-caneca__container {
         width: 100%;
 
         display: flex;
-        flex-direction: column;
+        flex-direction: row-reverse;
         align-items: center;
-        justify-content: space-evenly;
+        
     }
 
     .banner-segunda-caneca h2 {
@@ -1774,12 +1825,16 @@
     }
 
     .banner-segunda-caneca__container .imagem-caneca {
-        width: 100vw;
+        width: 45%;
     }
 
     .banner-segunda-caneca__container-texto {
         height: 15.12rem;
         width: 21.87rem;
+
+        margin-bottom: 3rem;
+
+        margin-right: 1.5em;
     }
 
     .banner-segunda-caneca__container-texto--conteudo {
@@ -1788,6 +1843,10 @@
         justify-content: center;
 
         padding-left: .4em;
+    }
+
+    .subtitulo-mobile {
+        text-align: center;
     }
 
     .banner-segunda-caneca__container-texto--conteudo p {
@@ -2084,6 +2143,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* ### ESTILIZAÇÃO PARA DISPOSITIVOS MAIORES QUE 1024PX ### */
 @media (min-width: 1024px) {
     /* ### ESTILIZAÇÕES DE ITENS DO HEADER ### */
@@ -2301,6 +2370,13 @@
         margin: 0em;
     }
 
+    .lancamentos-desktop {
+        display: flex;
+    }
+
+    .lancamentos-mobile {
+        display: none;
+    }
 
     /* ### ESTILIZAÇÃO DA SEÇÃO DE BANNER DA PRIMEIRA CANECA ### */
     .banner-primeira-caneca {
@@ -2481,6 +2557,7 @@
         padding-left: 1em;
 
         height: 3rem;
+        width: 18rem;
 
         margin-left: .6em;
         margin-right: .6em;
@@ -2493,6 +2570,7 @@
         padding-left: 1em;
 
         height: 3rem;
+        width: 18rem;
 
         margin-left: .6em;
         margin-right: .6em;
@@ -2705,6 +2783,14 @@
 }
 
 
+
+
+
+
+
+
+
+
 /* ### ESTILIZAÇÃO PARA DISPOSITIVOS MAIORES QUE 1280PX ### */
 @media (min-width: 1280px) {
 
@@ -2776,10 +2862,11 @@
     }
 
     #busca-produtos-desktop {
-        width: 18rem;
+        width: 36.18rem;
         height: 2.3rem;
 
         margin-top: -.2em;
+        margin-left: 1.2rem;
 
         border: 1px solid #ccc;
         border-radius: .3em;
@@ -2790,8 +2877,12 @@
     #lupa-busca-desktop {
         position: absolute;
 
-        right: .5em;
-        top: .2em;
+        right: -9.9em;
+        top: .3em;
+    }
+
+    .resultado-busca-desktop {
+        width: 20%;
     }
 
     .usuario-e-carrinho {
@@ -2877,7 +2968,7 @@
     .itens-departamento {
         height: inherit;
 
-        margin-left: 0em;
+        margin-left: 3em;
 
         width: 30.68rem;
 
@@ -2964,6 +3055,686 @@
         align-items: center;
         
         height: 34rem;
+
+        margin-bottom: -12em;
+    }
+
+    .banner-primeira-caneca img {
+        height: inherit;
+        width: 40%;
+    }
+
+    .banner-caneca-conteudo {
+        width: 20rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    /* ### ESTILIZAÇÃO DO BANNER DA SEGUNDA CANECA ### */
+    .banner-segunda-caneca {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .banner-segunda-caneca__container {
+        width: 80%;
+        height: 80%;
+
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-segunda-caneca__container .imagem-caneca {
+        width: 38%;
+        height: 100%;
+
+        margin-left: 2em;
+    }
+
+    .subtitulo-mobile {
+        display: none;
+    }
+
+    .subtitulo-desktop {
+        display: block;
+
+        font-size: 1.87em;
+        font-weight: 700;
+        color: #4F4F4F;
+    }
+
+    .banner-segunda-caneca__container-texto {
+        height: 25rem;
+        width: 20rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE BANNER DA TERCEIRA CANECA ### */
+    .banner-terceira-caneca {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 2.87rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .banner-terceira-caneca__container {
+        width: 80%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-terceira-caneca__container .imagem-caneca {
+        width: 30rem;
+        height: 100%;
+
+        margin-left: 2em;
+        margin-top: 0;
+    }
+
+    .banner-terceira-caneca__container-texto {
+        height: 25em;
+        width: 23rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO CONTENDO SEGUNDO CARROSEL DE LANÇAMEMTO ### */
+    .lancamentos-desktop {
+        display: flex;
+    }
+    
+
+
+    /* ### ESTILIZAÇÃO DO SEÇÃO COM BANNER DO ESCRITÓRIO AVANTI ### */
+    .banner-escritorio-avanti .contato{
+        width: 100%;
+
+        margin-top: 0em;
+    }
+
+    .banner-escritorio-avanti {
+        background: url('../../assets/images/banner-escritorio-avanti-desktop.png');
+        background-size: cover;
+    }
+
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE NEWSLETTER ### */
+    .newsletter {
+        height: 20.68rem;
+        width: 100vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .newsletter-cadastro {
+        font-weight: 600;
+    }
+
+    .newsletter span {
+        color: #005CFF;
+
+        font-weight: 600;
+    }
+
+    #formulario-newsletter {
+        background-color: #F5F5F5;
+
+        height: 10em;
+        width: 95%;
+
+        border-radius: .6rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #formulario-newsletter form {
+        height: 13rem;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #formulario-newsletter form input[type=text] {
+        border: none;
+        border-radius: .4em;
+
+        margin-bottom: .5em;
+
+        padding-left: 1em;
+
+        height: 3rem;
+        width: 20rem;
+
+        margin-left: .6em;
+        margin-right: .6em;
+    }
+
+    #formulario-newsletter form input[type=email] {
+        border: none;
+        border-radius: .4em;
+
+        padding-left: 1em;
+
+        height: 3rem;
+        width: 20rem;
+
+        margin-left: .6em;
+        margin-right: .6em;
+    }
+
+    #formulario-newsletter form input[type=submit] {
+        background-color: #005CFF;
+
+        border: none;
+        border-radius: .6em;
+
+        height: 3em;
+        width: 9em;
+
+        color: #FFF;
+
+        font-weight: 700;
+
+        padding: .7rem;
+    }
+
+    .politica-de-privacidade {
+        height: 1rem;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: .5em 0;
+    }
+
+    .politica-de-privacidade p {
+        color: #656565;
+
+        font-size: .75em;
+        font-weight: 700;
+
+        height: 0;
+
+        margin-left: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    .politica-de-privacidade span {
+        font-weight: 700;
+
+        color: #656565;
+
+        text-decoration: underline;
+    }
+
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE MIDIA, MENU INFERIOR E PAGAMENTO EM DISPOSITIVOS DESKTOP ### */
+
+    /* O elemento .midia-e-pagamento refere-se ao seção de mesmo nome em dispositivos mobile */
+    .midia-e-pagamento {
+        display: none;
+    }
+
+    .midia-menu-e-pagamento-desktop {
+        width: 100vw;
+        height: 24.12rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .midia-e-menu-container {
+        width: 86%;
+        height: 10.62rem;
+
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    .logo-e-midias-sociais {
+        width: 12.12rem;
+        height: 5.81rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .logo-avanti-desktop {
+        width: 10em;
+    }
+
+    .midias-sociais {
+        width: 100%;
+        height: 1.62em;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-inferior {
+
+        height: inherit;
+        width: 68%;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .institucional {
+        width: 11.62em;
+        height: 8.87em;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .central-de-ajuda {
+        width: 25%;
+        height: 10.62em;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .atendimento {
+
+        width: 37%;
+        height: 8.87em;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .atendimento-container {
+        height: 80%;
+
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 1em;
+    }
+
+    .atendimento-container span {
+        display: flex;
+        align-items: center;
+
+        height: 1.8em;
+    }
+
+    .atendimento-container span p {
+        font-size: .75em;
+
+        margin-left: .2em;
+        margin-top: 1.3em;
+    }
+
+    .atendimento-container span h5 {
+        font-weight: 700;
+        font-size: .87em;
+    }
+
+    .atendimento-container h5 {
+        margin-bottom: 0em;
+    }
+
+    .horario-atendimento {
+        font-size: .75em;
+        margin: 0;
+    }
+
+    #horario-atendimento-subtitulo {
+        margin-top: -.1em;
+
+        font-weight: 700;
+    }
+
+    .menu-inferior h4 {
+        font-size: .75em;
+        font-weight: 700;
+
+        padding-top: .3em;
+    }
+
+    .menu-inferior h5 {
+        font-size: .87em;
+        font-weight: 400;
+    }
+
+    /* ### ESTILIZAÇÃO DO FOOTER ### */
+    .avanti-e-vtex  {
+        width: 80%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .avanti-e-vtex .desktop {
+        text-align: center;
+
+        display: block;
+    }
+
+    .avanti-e-vtex .mobile {
+        display: none;
+    }
+}
+
+
+
+
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+    #lupa-busca-desktop {
+        position: absolute;
+
+        right: -5.5em;
+        top: .3em;
+    }
+}
+
+
+
+
+
+
+/* ### ESTILIZAÇÃO PARA DISPOSITIVOS MAIORES QUE 1280PX ### */
+@media (min-width: 1920px) {
+
+    /* ### ESTILIZAÇÕES DE ITENS DO HEADER ### */
+    .cupom-desconto {
+        background-color: #005cff;
+
+        width: 100vw;
+        height: 1.87rem;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cupom-desconto p {
+        color: #FFF;
+        font-weight: 700;
+        font-size: .87em;
+
+        margin: 0;
+    }
+
+    .cupom-desconto__preco {
+        background-color: #6220c1;
+        padding: .2em;
+    }
+
+    .cupom-desconto__desconto {
+        font-weight: 300;
+    }
+
+    .icones-e-busca-mobile {
+        display: none;
+    }
+
+    .icones-e-busca-desktop {
+        width: 100vw;
+        height: 7.37rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-conteudos-header {
+        width: 75%;
+        height: 4.87rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .container-logo-busca-carrinho {
+        width: 100%;
+        height: 1.75rem;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-e-busca-container {
+        width: 60%;
+
+        display: flex;
+        justify-content: space-between;
+
+        position: relative;
+    }
+
+    #busca-produtos-desktop {
+        width: 36.18rem;
+        height: 2.3rem;
+
+        margin-top: -.2em;
+
+        border: 1px solid #ccc;
+        border-radius: .3em;
+
+        padding-left: .6em;
+    }
+
+    #lupa-busca-desktop {
+        position: absolute;
+
+        right: 1em;
+        top: .3em;
+    }
+
+    .resultado-busca-desktop {
+        width: 20%;;
+    }
+
+    .usuario-e-carrinho {
+        width: 10.26rem;
+        height: 1.75rem;
+
+        display: flex;
+    }
+
+    .usuario-nome p {
+        font-size: .7em;
+        font-weight: 600;
+
+        margin-bottom: 0;
+        margin-left: .5em;
+    }
+
+    #nome-usuario {
+        margin-top: -.4em;
+    }
+
+    .usuario-container {
+        display: flex;
+
+        width: 7.23rem;
+        height: 1.75rem;
+    }
+
+    .carrinho-container {
+        position: relative;
+    }
+
+    .itens-carrinho {
+        background-color: #005cff;
+        width: .5em;
+        height: .5em;
+
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 1rem;
+        
+        padding: .7rem;
+
+        font-weight: 400;
+
+        position: absolute;
+
+        top: -.6em;
+        right: -.5em;
+    }
+
+    .menu-superior {
+        width: 100%;
+        height: 1.37rem;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .todas-as-categorias {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        width: 10em;
+        height: inherit;
+    }
+
+    .todas-as-categorias p {
+        margin: 0;
+        font-size: .8em;
+        font-weight: 700;
+    }
+
+    .todas-as-categorias .menu-hamburger {
+        width: .87em;
+        height: .62em;
+    }
+
+    .itens-departamento {
+        height: inherit;
+
+        margin-left: 3em;
+
+        width: 30.68rem;
+
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        
+    }
+
+    .itens-departamento span {
+        font-size: .9rem;
+
+        margin-top: .2em;
+    }
+
+
+    /* ### ESTILIZAÇÃO DO BANNER DE DESCONTO ### */
+    .banner-desconto-desktop {
+        width: 100vw;
+        height: 16.7rem;
+    
+        background-color: #E7E7EA;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-desconto-desktop img {
+        width: 22rem;
+    }
+
+    #slide-carousel {
+        display: none;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE LANÇAMENTOS ### */
+    .lancamentos__container {
+        width: 83%;
+    }
+
+    .cards-container {
+        height: 25.56rem;
+    }
+
+    .cards-container .card {
+        width: 14em;
+        height: 25.56rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card .container-imagem-lancamento {
+        background: url('../../assets/images/home-blusa-branca-desktop.png')!important;
+        background-size: cover;
+
+        height: 14em;
+        width: 100%;
+    }
+
+    .cards-container .card h3 {
+
+        text-align: center;
+    }
+
+    .preco-container {
+        width: 70%;
+
+        margin-left: .5em;
+    }
+
+    .botao-comprar {
+        width: 90%;
+
+        margin-left: .7em;
+    }
+
+    /* ### ESTILIZAÇÃO DA SEÇÃO DE BANNER DA PRIMEIRA CANECA ### */
+    .banner-primeira-caneca {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        height: 34rem;
+
+        margin-bottom: -12em;
     }
 
     .banner-primeira-caneca img {

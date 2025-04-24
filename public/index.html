@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página de um ecommerce voltado para venda de canecas, roupas e outros produtos relacionados">
     <title>Avanti</title>
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../src/styles/bootstrap.min.css">
     <link rel="stylesheet" href="../src/styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +31,7 @@
                 </nav>
 
                 <figure>
-                    <img src="../assets/images/avanti-logo.png" alt="">
+                    <img class="logo-avanti" src="../assets/images/avanti-logo.png" alt="">
                 </figure>
 
                 <div class="carrinho-wrapper">
@@ -153,7 +154,7 @@
          </section>
 
          <!-- ### A section abaixo está relacionada à área com os lançamentos de produtos contendo carrosel com imagens e preços ### -->
-        <section class="lancamentos carousel" id="slide-lancamentos" data-bs-ride="carousel" data-bs-interval="3000">
+        <section class="lancamentos lancamentos-mobile carousel" id="slide-lancamentos" data-bs-ride="carousel" data-bs-interval="3000">
             <ol class="carousel-indicators">
                 <li data-bs-target="#slide-carousel-lancamento" data-bs-slide-to="0" class="active"></li>
                 <li data-bs-target="#slide-carousel-lancamento" data-bs-slide-to="1"></li>
@@ -166,7 +167,32 @@
                 </div>
 
                 <article class="cards-container">
-                    <div class="card carousel-item active">
+                    <div class="card active">
+                        <div class="container-imagem-lancamento ">
+                            <div class="lancamento-novo-produto">Novo</div>
+                        </div>
+
+                        <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+
+                        <article class="preco-container">
+                            <div class="preco-e-desconto">
+                                <div class="preco-novo">
+                                    <span class="preco-anterior"><del>R$ 100,00</del></span>
+                                    <span class="preco-atual">R$79,90</span>
+                                </div>
+
+                                <span class="porcentagem-desconto">10% OFF</span>
+                            </div>
+                            
+                            <div class="parcelamento">Ou em até <span>10x de R$ 7,90</span></div>
+                        </article>
+
+                        <span class="botao-comprar">
+                            <a href="#">Comprar</a>
+                        </span>
+                    </div>
+
+                    <div class="card">
                         <div class="container-imagem-lancamento">
                             <div class="lancamento-novo-produto">Novo</div>
                         </div>
@@ -191,7 +217,134 @@
                         </span>
                     </div>
 
-                    <div class="card carousel-item">
+                    <div class="cards-container-desktop">
+                        <div class="card carousel-item">
+                            <div class="container-imagem-lancamento">
+                                <div class="lancamento-novo-produto">Novo</div>
+                            </div>
+    
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+    
+                            <article class="preco-container">
+                                <div class="preco-e-desconto">
+                                    <div class="preco-novo">
+                                        <span class="preco-anterior"><del>R$ 100,00</del></span>
+                                        <span class="preco-atual">R$79,90</span>
+                                    </div>
+    
+                                    <span class="porcentagem-desconto">10% OFF</span>
+                                </div>
+                                
+                                <div class="parcelamento">Ou em até <span>10x de R$ 7,90</span></div>
+                            </article>
+    
+                            <span class="botao-comprar">
+                                <a href="#">Comprar</a>
+                            </span>
+                        </div>
+    
+                        <div class="card carousel-item">
+                            <div class="container-imagem-lancamento">
+                                <div class="lancamento-novo-produto">Novo</div>
+                            </div>
+    
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+    
+                            <article class="preco-container">
+                                <div class="preco-e-desconto">
+                                    <div class="preco-novo">
+                                        <span class="preco-anterior"><del>R$ 100,00</del></span>
+                                        <span class="preco-atual">R$79,90</span>
+                                    </div>
+    
+                                    <span class="porcentagem-desconto">10% OFF</span>
+                                </div>
+                                
+                                <div class="parcelamento">Ou em até <span>10x de R$ 7,90</span></div>
+                            </article>
+    
+                            <span class="botao-comprar">
+                                <a href="#">Comprar</a>
+                            </span>
+                        </div>
+    
+                        <div class="card carousel-item">
+                            <div class="container-imagem-lancamento">
+                                <div class="lancamento-novo-produto">Novo</div>
+                            </div>
+    
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+    
+                            <article class="preco-container">
+                                <div class="preco-e-desconto">
+                                    <div class="preco-novo">
+                                        <span class="preco-anterior"><del>R$ 100,00</del></span>
+                                        <span class="preco-atual">R$79,90</span>
+                                    </div>
+    
+                                    <span class="porcentagem-desconto">10% OFF</span>
+                                </div>
+                                
+                                <div class="parcelamento">Ou em até <span>10x de R$ 7,90</span></div>
+                            </article>
+    
+                            <span class="botao-comprar">
+                                <a href="#">Comprar</a>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </article>
+
+            <a href="#slide-carousel-lancamento" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a href="#slide-carousel-lancamento" class="carousel-control-next" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </section>
+
+
+        <section class="lancamentos lancamentos-desktop carousel" id="slide-lancamentos" data-bs-ride="carousel" data-bs-interval="3000">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#slide-carousel-lancamento" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#slide-carousel-lancamento" data-bs-slide-to="1"></li>
+                <li data-bs-target="#slide-carousel-lancamento" data-bs-slide-to="2"></li>
+            </ol>
+            <article class="lancamentos__container carousel-inner">
+                <div class="subtitulo-e-botao">
+                    <h2>Lançamentos</h2>
+                    <a href="#" class="botao-ver-mais">Ver mais</a>
+                </div>
+
+                <article class="cards-container">
+                    <div class="card active">
+                        <div class="container-imagem-lancamento ">
+                            <div class="lancamento-novo-produto">Novo</div>
+                        </div>
+
+                        <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+
+                        <article class="preco-container">
+                            <div class="preco-e-desconto">
+                                <div class="preco-novo">
+                                    <span class="preco-anterior"><del>R$ 100,00</del></span>
+                                    <span class="preco-atual">R$79,90</span>
+                                </div>
+
+                                <span class="porcentagem-desconto">10% OFF</span>
+                            </div>
+                            
+                            <div class="parcelamento">Ou em até <span>10x de R$ 7,90</span></div>
+                        </article>
+
+                        <span class="botao-comprar">
+                            <a href="#">Comprar</a>
+                        </span>
+                    </div>
+
+                    <div class="card">
                         <div class="container-imagem-lancamento">
                             <div class="lancamento-novo-produto">Novo</div>
                         </div>
@@ -326,9 +479,10 @@
             <article class="banner-segunda-caneca__container">
                 <img class="imagem-caneca" src="../assets/images/imagem-caneca-em-pe.png" alt="Imagem de uma caneca com nome da Avanti em posição em pé">
 
-                <h2 class="subtitulo-mobile">Lorem Ipsum</h2>
+                
 
                 <article class="banner-segunda-caneca__container-texto">
+                    <h2 class="subtitulo-mobile">Lorem Ipsum</h2>
                     <h2 class="subtitulo-desktop">Lorem Ipsum</h2>
 
                     <div class="banner-segunda-caneca__container-texto--conteudo">
