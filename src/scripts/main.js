@@ -37,8 +37,10 @@ iconeLupaDesktop.addEventListener('click', () => {
 
     if(resultadoDesktop != '') {
         resultadoBuscaDesktop.textContent = `Você buscou por: '${resultadoDesktop}'`;
-        resultadoBuscaDesktop.style.marginLeft = '10.9em';
-        resultadoBuscaDesktop.style.marginTop = '.7em';
-        resultadoBuscaDesktop.style.marginBottom = '.1em';
+        resultadoBuscaDesktop.style.width = '80%';
+        resultadoBuscaDesktop.style.marginLeft = '1.5rem';
+        resultadoBuscaDesktop.style.marginTop = '.5em';
+
+        menuSuperior.style.marginTop = '2.5rem';
     }
 })
