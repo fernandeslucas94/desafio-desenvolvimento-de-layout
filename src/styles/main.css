@@ -2293,7 +2293,7 @@
         right: -.5em;
     }
 
-    .menu-superior {
+    .menu-navegação {
         width: 100%;
         height: 1.37rem;
 
@@ -2951,7 +2951,7 @@
         right: -.5em;
     }
 
-    .menu-superior {
+    .menu-navegação {
         width: 100%;
         height: 1.37rem;
 
@@ -3008,6 +3008,81 @@
         font-size: .9em;
 
         cursor: pointer;
+    }
+
+    /* ### ESTILIZAÇÃO DO MENU SUPERIOR ### */
+    .menu-superior-desktop {
+        display: none;
+        justify-content: space-between;
+
+        width: 75%;
+        height: 20.56rem;
+
+        margin-left: 11.4rem;
+
+        position: absolute;
+
+        background-color: #fff;
+
+        filter: drop-shadow(0, 0, 0, 0.1);
+    }
+
+    .titulo-menu-superior {
+        font-weight: 700;
+        color: #000;
+        font-size: 1rem;
+
+        padding-left: 1em;
+        padding-top: 1em;
+    }
+
+    .itens-categoria {
+        width: 27.68rem;
+        height: 15.5rem;
+
+        margin-left: 1rem;
+
+        display: flex;
+        justify-content: space-between;
+
+        position: absolute;
+        top: 2.6em;
+    }
+
+    .itens-container {
+        width: 4.3rem;
+        height: 14.75rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .itens-container span {
+        color: #005CFF;
+
+        font-size: .87em;
+        font-weight: 700;
+
+        margin-bottom: .5em;
+    }
+
+    .itens-container p {
+        font-size: .87em;
+        font-weight: 400;
+        
+        color: #656565;
+
+        margin-top: -.4em;
+    }
+
+    .imagem-caneca-container {
+        width: 16.43rem;
+        height: 18.62rem;
+
+        border-radius: .62rem;
+
+        background-image: url('../../assets/images/imagem-caneca-em-pe.png');
     }
 
     /* ### ESTILIZAÇÃO DO BANNER DE DESCONTO ### */
@@ -3640,7 +3715,7 @@
         right: -.5em;
     }
 
-    .menu-superior {
+    .menu-navegação {
         width: 100%;
         height: 1.37rem;
 

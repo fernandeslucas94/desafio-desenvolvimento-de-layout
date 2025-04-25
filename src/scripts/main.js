@@ -26,7 +26,7 @@ iconeLupaBusca.addEventListener('click', () => {
 let itemBuscaDesktop = document.querySelector("#busca-produtos-desktop");
 let iconeLupaDesktop = document.querySelector("#lupa-busca-desktop");
 let resultadoBuscaDesktop = document.querySelector(".resultado-busca-desktop");
-let menuSuperior = document.querySelector(".menu-superior");
+let menuNavegacao = document.querySelector(".menu-navegação");
 
 iconeLupaDesktop.addEventListener('click', () => {
     let resultadoDesktop = itemBuscaDesktop.value;
@@ -47,4 +47,62 @@ iconeLupaDesktop.addEventListener('click', () => {
 
 
 // A lógica abaixo refere-se ao comportamento de passar o mouse sobre os itens do menu superior e mostrar o menu e submenus
-let todasCategorias = document.querySelector(".todas-as-categorias");
+let menuSuperior = document.querySelector(".menu-superior-desktop");
+let listItems = document.querySelectorAll("ul li");
+
+listItems.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        menuSuperior.style.display = "flex";
+    })
+
+    item.addEventListener('mouseleave', () => {
+        menuSuperior.style.display = "none";
+    })
+})
+
+menuSuperior.innerHTML = `
+    <h2 class="titulo-menu-superior">Departamento</h2>
+
+    <article class="itens-categoria">
+
+        <div class="itens-container">
+            <span>Categoria</span>
+
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+        </div>
+
+        <div class="itens-container">
+            <span>Categoria</span>
+
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+        </div>
+
+        <div class="itens-container">
+            <span>Categoria</span>
+
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+        </div>
+    </article>
+
+    <div class="imagem-caneca-container">
+        <img 
+    </div>
+`;
