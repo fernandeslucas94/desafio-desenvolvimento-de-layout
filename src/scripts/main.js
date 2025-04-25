@@ -47,62 +47,160 @@ iconeLupaDesktop.addEventListener('click', () => {
 
 
 // A lógica abaixo refere-se ao comportamento de passar o mouse sobre os itens do menu superior e mostrar o menu e submenus
+let todasCategorias = document.querySelector(".todas-as-categorias");
 let menuSuperior = document.querySelector(".menu-superior-desktop");
+let menuTodasCategorias = document.querySelector(".menu-todas-as-categorias");
 let listItems = document.querySelectorAll("ul li");
 
-listItems.forEach(item => {
-    item.addEventListener('mouseover', () => {
-        menuSuperior.style.display = "flex";
+menuSuperior.innerHTML = `
+        <h2 class="titulo-menu-superior">Departamento</h2>
+
+        <article class="itens-categoria">
+
+            <div class="itens-container">
+                <span>Categoria</span>
+
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+            </div>
+
+            <div class="itens-container">
+                <span>Categoria</span>
+
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+            </div>
+
+            <div class="itens-container">
+                <span>Categoria</span>
+
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+            </div>
+        </article>
+
+        <div class="imagem-caneca-container">
+            <img 
+        </div>
+    `;
+
+    listItems.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            menuSuperior.style.display = "flex";
+        })
+
+        item.addEventListener('mouseleave', () => {
+            menuSuperior.style.display = "none";
+        })
     })
 
-    item.addEventListener('mouseleave', () => {
-        menuSuperior.style.display = "none";
-    })
+
+todasCategorias.addEventListener("mouseover", () => {
+    menuTodasCategorias.innerHTML = `
+    <aside class="menu-navegacao-lateral">
+        <div class="menu-navegacao-lateral__item-container">
+            <p id="primeiro">Departamento</p> <img src="../../assets/images/seta-direita.png">
+        </div>
+
+        <div class="menu-navegacao-lateral__item-container">
+            <p>Departamento</p> <img src="../../assets/images/seta-direita.png">
+        </div>
+
+        <div class="menu-navegacao-lateral__item-container">
+            <p>Departamento</p> <img src="../../assets/images/seta-direita.png">
+        </div>
+
+        <div class="menu-navegacao-lateral__item-container">
+            <p>Departamento</p> <img src="../../assets/images/seta-direita.png">
+        </div>
+
+        <div class="menu-navegacao-lateral__item-container">
+            <p>Departamento</p> <img src="../../assets/images/seta-direita.png">
+        </div>
+
+        <div class="menu-navegacao-lateral__item-container">
+            <p>Departamento</p> <img src="../../assets/images/seta-direita.png">
+        </div>
+
+        <div class="menu-navegacao-lateral__item-container">
+            <p>Departamento</p> <img src="../../assets/images/seta-direita.png">
+        </div>
+
+        <div class="menu-navegacao-lateral__item-container">
+            <p>Departamento</p> <img src="../../assets/images/seta-direita.png">
+        </div>
+
+        <div class="menu-navegacao-lateral__item-container">
+            <p>Departamento</p> <img src="../../assets/images/seta-direita.png">
+        </div>
+
+        <div class="menu-navegacao-lateral__item-container">
+            <p>Departamento</p> <img src="../../assets/images/seta-direita.png">
+        </div>
+    </aside>
+
+        <article class="itens-categoria">
+
+            <div class="itens-container">
+                <span>Categoria</span>
+
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+            </div>
+
+            <div class="itens-container">
+                <span>Categoria</span>
+
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+            </div>
+
+            <div class="itens-container">
+                <span>Categoria</span>
+
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+                <p>Categoria</p>
+            </div>
+        </article>
+
+        <div class="imagem-caneca-container">
+            <img 
+        </div>
+`;
+
+menuTodasCategorias.style.display = "flex";
 })
 
-menuSuperior.innerHTML = `
-    <h2 class="titulo-menu-superior">Departamento</h2>
-
-    <article class="itens-categoria">
-
-        <div class="itens-container">
-            <span>Categoria</span>
-
-            <p>Categoria</p>
-            <p>Categoria</p>
-            <p>Categoria</p>
-            <p>Categoria</p>
-            <p>Categoria</p>
-            <p>Categoria</p>
-            <p>Categoria</p>
-        </div>
-
-        <div class="itens-container">
-            <span>Categoria</span>
-
-            <p>Categoria</p>
-            <p>Categoria</p>
-            <p>Categoria</p>
-            <p>Categoria</p>
-            <p>Categoria</p>
-            <p>Categoria</p>
-            <p>Categoria</p>
-        </div>
-
-        <div class="itens-container">
-            <span>Categoria</span>
-
-            <p>Categoria</p>
-            <p>Categoria</p>
-            <p>Categoria</p>
-            <p>Categoria</p>
-            <p>Categoria</p>
-            <p>Categoria</p>
-            <p>Categoria</p>
-        </div>
-    </article>
-
-    <div class="imagem-caneca-container">
-        <img 
-    </div>
-`;
+todasCategorias.addEventListener("mouseleave", () => {
+    menuTodasCategorias.style.display = "none";
+})

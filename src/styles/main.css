@@ -3027,6 +3027,61 @@
         filter: drop-shadow(0, 0, 0, 0.1);
     }
 
+    .menu-todas-as-categorias {
+        display: none;
+        justify-content: space-between;
+
+        width: 75%;
+        height: 20.56rem;
+
+        margin-left: 11.4rem;
+
+        position: absolute;
+
+        background-color: #fff;
+    }
+
+    .menu-todas-as-categorias .itens-categoria {
+        margin-left: 14rem;
+
+        margin-top: -2.4em;
+    }
+
+    .menu-navegacao-lateral {
+        width: 11.91rem;
+        height: 18.62rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .menu-navegacao-lateral__item-container {
+        width: 100%;
+        height: 1.18rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-left: .5em;
+        padding-top: .5em;
+    }
+
+    .menu-navegacao-lateral__item-container #primeiro {
+        color: #005cff;
+
+        font-weight: 700;
+        font-size: .87em;
+    }
+
+    .menu-navegacao-lateral__item-container p {
+        margin: 0;
+
+        font-weight: 400;
+        font-size: .87em;
+    }
+
     .titulo-menu-superior {
         font-weight: 700;
         color: #000;
