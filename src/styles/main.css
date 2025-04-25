@@ -2308,6 +2308,8 @@
 
         width: 10em;
         height: inherit;
+
+        cursor: pointer;
     }
 
     .todas-as-categorias p {
@@ -2324,8 +2326,6 @@
     .itens-departamento {
         height: inherit;
 
-        margin-left: 0em;
-
         width: 30.68rem;
 
         display: flex;
@@ -2334,10 +2334,20 @@
         
     }
 
-    .itens-departamento span {
-        font-size: .7rem;
+    .itens-departamento ul {
+        display: flex;
 
-        margin-top: .2em;
+        gap: 1em;
+
+        margin-left: -1.5em;
+
+        margin-top: 1em;
+    }
+
+    .itens-departamento ul li {
+        font-size: .7em;
+
+        cursor: pointer;
     }
 
 
@@ -2956,6 +2966,8 @@
 
         width: 10em;
         height: inherit;
+
+        cursor: pointer;
     }
 
     .todas-as-categorias p {
@@ -2972,7 +2984,7 @@
     .itens-departamento {
         height: inherit;
 
-        margin-left: 3em;
+        /* margin-left: 3em; */
 
         width: 30.68rem;
 
@@ -2982,12 +2994,21 @@
         
     }
 
-    .itens-departamento span {
-        font-size: .7rem;
+    .itens-departamento ul {
+        display: flex;
 
-        margin-top: .2em;
+        gap: 1em;
+
+        margin-left: -1.5em;
+
+        margin-top: 1em;
     }
+    
+    .itens-departamento ul li {
+        font-size: .9em;
 
+        cursor: pointer;
+    }
 
     /* ### ESTILIZAÇÃO DO BANNER DE DESCONTO ### */
     .banner-desconto-desktop {
@@ -3634,6 +3655,8 @@
 
         width: 10em;
         height: inherit;
+
+        cursor: pointer;
     }
 
     .todas-as-categorias p {
@@ -3660,10 +3683,20 @@
         
     }
 
-    .itens-departamento span {
-        font-size: .9rem;
+    .itens-departamento ul {
+        display: flex;
 
-        margin-top: .2em;
+        gap: 1em;
+
+        margin-left: -1.5em;
+
+        margin-top: 1em;
+    }
+
+    .itens-departamento ul li {
+        font-size: 1em;
+
+        cursor: pointer;
     }
 
 

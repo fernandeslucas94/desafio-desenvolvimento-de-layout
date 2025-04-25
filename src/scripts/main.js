@@ -4,7 +4,7 @@ let iconeLupaBusca = document.querySelector("#lupa-busca");
 let resultadoBusca = document.querySelector(".resultado-busca");
 let menuELogoContainer = document.querySelector(".menu-e-carrinho");
 let carouselContainer = document.querySelector(".slide");
-
+    
 iconeLupaBusca.addEventListener('click', () => {
     let resultado = buscaItens.value;
 
@@ -44,3 +44,7 @@ iconeLupaDesktop.addEventListener('click', () => {
         menuSuperior.style.marginTop = '2.5rem';
     }
 })
+
+
+// A lógica abaixo refere-se ao comportamento de passar o mouse sobre os itens do menu superior e mostrar o menu e submenus
+let todasCategorias = document.querySelector(".todas-as-categorias");
